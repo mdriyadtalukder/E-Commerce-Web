@@ -213,24 +213,45 @@ nav>ul>li:hover>a{
     color:gray ;
     padding-left: 10px;
 }
+
+/* Mobile devices*/
 @media only screen and (max-width:688px) {
-    *{
-        margin: 0 0;
-    }
     body{
-        background-color: aqua;
+        background-color: rgba(0, 255, 255, 0.185);
     }
-    header,main,nav,.sec2,.headd,.sec3,.sec4,.sec5,footer,.foo,.inf{
+    header,main, footer,nav,.sec2,.headd,.sec3,.sec4,.sec5,.foo,.inf{
         width: 100%;
     }
-    .art,.keds,.black,.icon,.ic-cl,.sec3,.sec4,.nab,.foo,.inf{
+    .art,.keds,.black,.icons,.ic-cl,.sec3,.sec4,.nab,.foo,.inf{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-    h1,h2,p,span,.hl,.buy{
-        display: block;
-    }
     .link-pic img{
         width: 80px;
+    }
+}
+
+/* tablet devices*/
+@media only screen and (min-width:688px) and (max-width:992px){
+    body{
+        background-color: rgba(137, 43, 226, 0.103);
+    }
+    header,main, footer,nav,.sec2,.headd,.sec3,.sec4,.sec5,.foo,.inf{
+        width: 100%;
+    }
+    .art,.keds,.black,.icons,.ic-cl,.sec3,.sec4,.nab{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .inf{
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+    }
+    .pc img{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .ar{
+        margin-top: 100px;
     }
 }
